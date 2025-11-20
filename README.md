@@ -1,0 +1,6 @@
+Juan Antonio Roman Castro
+# Opiniones
+El uso de árboles para realizar machine learning me parece interesante, pues esta librería de Python nos ayuda a manejar datasets, haciendo cálculos con los valores dentro del dataset para crear un modelo entrenado.
+Al hacer ajustes en el parámetro `max_depth`, se puede controlar cuántos elementos se usan para el entrenamiento del árbol; al tener un valor mayor o ilimitado (`None`) tiende a crear árboles de mayor tamaño y con reglas más exactas, además de aumentar la precisión. Esto se puede comprobar al alterar la función añadiendo el parámetro `random_state` para que los intentos surjan con la misma semilla de aleatoriedad: salen árboles similares, y cuando el valor de `max_depth` es mayor o nulo se acerca más a la precisión de 1.
+## Mi base de conocimiento
+Considero que la base de conocimiento de nuestro proyecto no es capaz de pasar por el modelo de árbol de decisiones, ya que los valores que utilizamos no son numéricos; utilizamos palabras como "identificación vigente". Para poder usarlas tendríamos que asignar un número a cada uno de los valores y reasignarlos: por ejemplo, asignar 1, 2 o 0 a "identificación" dependiendo de si está vigente, extraviada o vencida. Habrá que hacer eso con todos los valores para que el árbol se entrene mediante esos números.
